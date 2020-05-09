@@ -1,11 +1,11 @@
 #! /bin/sh
 
 RUN apt-get update \
-    && apt-get install -y g++ \
-    && apt-get install -y cmake \
-    && apt-get install -y libgsf-1-dev \
-    && apt-get install -y libc++-dev \
-    && apt-get install -y git \
+    && apk install -y g++ \
+    && apk install -y cmake \
+    && apk install -y libgsf-1-dev \
+    && apk install -y libc++-dev \
+    && aapk install -y git \
     # This is a workaround to solve an issue with xlocale.h due it is not present in glibc 2.26
     #&& ln -s /usr/include/locale.h /usr/include/xlocale.h \
     && cd / \
