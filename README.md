@@ -4,8 +4,8 @@ This repository contains a Dockerfile for building a JPIP Server image containin
 
 This Docker image is also available on Docker Hub [dhiraj240/dockeresa:01][3].
 
-## The whole size used in this container is compact and is packaged in small size due to use of best docker image building practices.
-## It is of size 2 MB which could have been more than 200 MB without the use of my development process.
+## Working on Alpine to reduce its size
+## It can become to size 2 MB which could have been more than 200 MB without the use of my development process.
 
 ## ESA JPIP Server
 
