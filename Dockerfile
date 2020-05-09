@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM alpine
 
 LABEL title="esajpip" \
   author="José Juan Sánchez"
@@ -8,12 +8,12 @@ ENV SWHV_PORT_JPIP=8090
 ENV SWHV_DIR_IMAGE=/root/esajpip/images
 ENV SWHV_DIR_LOG=/root/esajpip/log
 
-RUN apt-get update \
-    && apt-get install -y g++ \
-    && apt-get install -y cmake \
-    && apt-get install -y libgsf-1-dev \
-    && apt-get install -y libc++-dev \
-    && apt-get install -y git \
+RUN apk update \
+    && apk add g++ \
+    && apk add cmake \
+    && apk add libgsf-1-dev \
+    && apk add libc++-dev \
+    && apk add git \
     # This is a workaround to solve an issue with xlocale.h due it is not present in glibc 2.26
     #&& ln -s /usr/include/locale.h /usr/include/xlocale.h \
     && cd / \
