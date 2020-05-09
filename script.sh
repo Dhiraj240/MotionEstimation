@@ -1,6 +1,6 @@
 #! /bin/sh
 
-RUN apt-get update \
+RUN apk update \
     && apk install -y g++ \
     && apk install -y cmake \
     && apk install -y libgsf-1-dev \
