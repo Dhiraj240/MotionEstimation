@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
-LABEL title="esajpip" \
-  author="José Juan Sánchez"
+LABEL title="dockeresa" \
+  author="Dhiraj Sharma"
 
 ENV DEBIAN_FRONTEND=noninteractive 
 ENV SWHV_PORT_JPIP=8090
